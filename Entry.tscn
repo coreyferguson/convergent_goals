@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/game/field/background.png" type="Texture" id=1]
 [ext_resource path="res://camera.gd" type="Script" id=2]
 [ext_resource path="res://scenes/game/field/TileSet.tres" type="TileSet" id=3]
 [ext_resource path="res://scenes/game/field/TileMap.gd" type="Script" id=4]
+[ext_resource path="res://scenes/game/field/inventory_view/InventoryListing.tscn" type="PackedScene" id=5]
 
 [node name="field" type="Node2D"]
 
@@ -30,3 +31,7 @@ format = 1
 script = ExtResource( 4 )
 
 [node name="constructions" type="Node2D" parent="."]
+
+[node name="canvas_layer" type="CanvasLayer" parent="."]
+
+[node name="inventory_listing" parent="canvas_layer" instance=ExtResource( 5 )]
