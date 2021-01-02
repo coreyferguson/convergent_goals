@@ -9,8 +9,7 @@ func _ready():
 	_render_inventory_items()
 
 func _on_inventory_items_changed(action, item_name):
-	print("action: " + String(action))
-	print("item_name: " + String(item_name))
+	_render_inventory_items()
 
 func _render_inventory_items():
 	var existing_items = listing_node.get_children()

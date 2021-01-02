@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/text_background_ninepatch.png-94c24cc04fdebda393c6828fb668cae5.stex"
+path="res://.import/text_background_ninepatch.png-353374e701e98f11d9e1e94e03342111.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/game/field/inventory_view/text_background_ninepatch.png"
-dest_files=[ "res://.import/text_background_ninepatch.png-94c24cc04fdebda393c6828fb668cae5.stex" ]
+source_file="res://ui/panels/text_background_ninepatch.png"
+dest_files=[ "res://.import/text_background_ninepatch.png-353374e701e98f11d9e1e94e03342111.stex" ]
 
 [params]
 
