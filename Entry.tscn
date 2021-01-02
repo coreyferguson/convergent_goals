@@ -21,11 +21,12 @@ offset = Vector2( 960, 540 )
 current = true
 script = ExtResource( 2 )
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="tile_map" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 74, 83 )
 cell_half_offset = 1
 centered_textures = true
 format = 1
-tile_data = PoolIntArray( 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196621, 0, 0, 262153, 0, 0, 262155, 0, 0, 262156, 0, 0, 327690, 0, 0 )
 script = ExtResource( 4 )
+
+[node name="constructions" type="Node2D" parent="."]
