@@ -4,6 +4,8 @@ var SCREEN_RESOLUTION = Vector2(1920, 1080)
 onready var tile_map = $'/root/field/tile_map'
 onready var constructions_container = $'/root/field/constructions'
 
+var constructions_map = {}
+
 func _ready():
 	_reset()
 
@@ -24,6 +26,7 @@ func _generate_map():
 	constructor_position += tile_map.cell_size / 2
 	constructor_instance.global_position = constructor_position
 	constructions_container.add_child(constructor_instance)
+	constructions_map[mid_cell] = constructor_instance
 
 func _get_relative_cell(cell_vector, direction):
 	var global_position = tile_map.map_to_world(cell_vector) + tile_map.cell_size/2

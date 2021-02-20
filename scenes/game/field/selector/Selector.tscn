@@ -32,7 +32,7 @@ margin_right = 1870.0
 margin_bottom = 1030.0
 mouse_filter = 2
 
-[node name="selected" type="NinePatchRect" parent="canvas/margin/hbox"]
+[node name="detailed_information" type="NinePatchRect" parent="canvas/margin/hbox"]
 visible = false
 margin_right = 400.0
 margin_bottom = 980.0
@@ -43,7 +43,7 @@ patch_margin_top = 5
 patch_margin_right = 5
 patch_margin_bottom = 5
 
-[node name="scroll" type="ScrollContainer" parent="canvas/margin/hbox/selected"]
+[node name="scroll" type="ScrollContainer" parent="canvas/margin/hbox/detailed_information"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -51,8 +51,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="vbox" type="VBoxContainer" parent="canvas/margin/hbox/selected/scroll"]
+[node name="margin" type="MarginContainer" parent="canvas/margin/hbox/detailed_information/scroll"]
+margin_right = 400.0
+margin_bottom = 980.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 20
+
+[node name="vbox" type="VBoxContainer" parent="canvas/margin/hbox/detailed_information/scroll/margin"]
+margin_left = 10.0
+margin_top = 20.0
+margin_right = 380.0
+margin_bottom = 960.0
 mouse_filter = 2
+size_flags_horizontal = 3
 
 [node name="spacing" type="MarginContainer" parent="canvas/margin/hbox"]
 margin_right = 1820.0

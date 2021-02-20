@@ -8,8 +8,7 @@ func _ready():
 	_reset()
 
 func _reset():
-	inventory['electricity'] = { 'name': 'electricity', 'quantity': '100' }
-	inventory['iron'] = { 'name': 'iron', 'quantity': '10' }
+	pass
 	
 func add_item(item_name, quantity):
 	if inventory.has(item_name): 
