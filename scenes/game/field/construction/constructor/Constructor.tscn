@@ -97,13 +97,13 @@ margin_bottom = 33.0
 custom_fonts/font = ExtResource( 3 )
 text = "100"
 
-[node name="current_electricity" type="HBoxContainer" parent="selector_ui"]
+[node name="electricity" type="HBoxContainer" parent="selector_ui"]
 margin_top = 96.0
 margin_right = 264.0
 margin_bottom = 139.0
 
-[node name="margin" type="MarginContainer" parent="selector_ui/current_electricity"]
-margin_right = 207.0
+[node name="margin" type="MarginContainer" parent="selector_ui/electricity"]
+margin_right = 240.0
 margin_bottom = 43.0
 size_flags_horizontal = 3
 custom_constants/margin_right = 10
@@ -111,16 +111,16 @@ custom_constants/margin_top = 10
 custom_constants/margin_left = 10
 custom_constants/margin_bottom = 10
 
-[node name="label" type="Label" parent="selector_ui/current_electricity/margin"]
+[node name="label" type="Label" parent="selector_ui/electricity/margin"]
 margin_left = 10.0
 margin_top = 10.0
-margin_right = 197.0
+margin_right = 230.0
 margin_bottom = 33.0
 custom_fonts/font = ExtResource( 3 )
 text = "current electricity"
 
-[node name="margin2" type="MarginContainer" parent="selector_ui/current_electricity"]
-margin_left = 211.0
+[node name="margin2" type="MarginContainer" parent="selector_ui/electricity"]
+margin_left = 244.0
 margin_right = 264.0
 margin_bottom = 43.0
 custom_constants/margin_right = 10
@@ -128,13 +128,88 @@ custom_constants/margin_top = 10
 custom_constants/margin_left = 10
 custom_constants/margin_bottom = 10
 
-[node name="value" type="Label" parent="selector_ui/current_electricity/margin2"]
+[node name="value" type="Label" parent="selector_ui/electricity/margin2"]
 margin_left = 10.0
 margin_top = 10.0
-margin_right = 43.0
+margin_right = 10.0
 margin_bottom = 33.0
 custom_fonts/font = ExtResource( 3 )
-text = "100"
+
+[node name="construction_bots" type="HBoxContainer" parent="selector_ui"]
+margin_top = 144.0
+margin_right = 264.0
+margin_bottom = 187.0
+
+[node name="margin" type="MarginContainer" parent="selector_ui/construction_bots"]
+margin_right = 240.0
+margin_bottom = 43.0
+size_flags_horizontal = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="label" type="Label" parent="selector_ui/construction_bots/margin"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 230.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 3 )
+text = "construction bots"
+
+[node name="margin2" type="MarginContainer" parent="selector_ui/construction_bots"]
+margin_left = 244.0
+margin_right = 264.0
+margin_bottom = 43.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="value" type="Label" parent="selector_ui/construction_bots/margin2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 10.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 3 )
+
+[node name="iron" type="HBoxContainer" parent="selector_ui"]
+margin_top = 144.0
+margin_right = 264.0
+margin_bottom = 187.0
+
+[node name="margin" type="MarginContainer" parent="selector_ui/iron"]
+margin_right = 240.0
+margin_bottom = 43.0
+size_flags_horizontal = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="label" type="Label" parent="selector_ui/iron/margin"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 230.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 3 )
+text = "iron"
+
+[node name="margin2" type="MarginContainer" parent="selector_ui/iron"]
+margin_left = 244.0
+margin_right = 264.0
+margin_bottom = 43.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="value" type="Label" parent="selector_ui/iron/margin2"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 10.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 3 )
 
 [node name="production_timer" type="Timer" parent="."]
 autostart = true
