@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-9d36f394382d9fef474d65f1d7e57b0f.stex"
+path="res://.import/icon.png-fcd9f95657046fb7ec9a6aef54b23e51.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/game/field/construction/constructor/icon.png"
-dest_files=[ "res://.import/icon.png-9d36f394382d9fef474d65f1d7e57b0f.stex" ]
+source_file="res://scenes/game/field/build/constructor/icon.png"
+dest_files=[ "res://.import/icon.png-fcd9f95657046fb7ec9a6aef54b23e51.stex" ]
 
 [params]
 

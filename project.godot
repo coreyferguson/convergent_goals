@@ -22,8 +22,8 @@ config/icon="res://icon.png"
 [autoload]
 
 field_service="*res://scenes/game/field/FieldService.gd"
-construction_service="*res://scenes/game/field/construction/ConstructionService.gd"
-inventory_service="*res://scenes/game/inventory/InventorySingleton.gd"
+build_service="*res://scenes/game/field/build/BuildService.gd"
+inventory_service="*res://scenes/game/field/inventory/InventorySingleton.gd"
 
 [display]
 

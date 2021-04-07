@@ -20,14 +20,14 @@ func _get_cell_n(v):
 func _generate_map():
 	# Create constructor in the middle of the screen
 	var mid_cell = tile_map.world_to_map(field_service.SCREEN_RESOLUTION / 2)
-	var ConstructorScene = construction_service.meta.constructor.scene
+	var ConstructorScene = build_service.meta.constructor.scene
 	var constructor_instance = ConstructorScene.instance()
 	var constructor_position = tile_map.map_to_world(mid_cell)
 	constructor_position += tile_map.cell_size / 2
 	constructor_instance.global_position = constructor_position
 	constructions_container.add_child(constructor_instance)
 	constructions_map[mid_cell] = constructor_instance
-	inventory_service.add_item('iron', 10)
+	constructor_instance.add_item({ 'name': 'iron', 'quantity': 100 })
 
 func _get_relative_cell(cell_vector, direction):
 	var global_position = tile_map.map_to_world(cell_vector) + tile_map.cell_size/2

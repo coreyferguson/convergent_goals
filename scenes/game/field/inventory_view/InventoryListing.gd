@@ -1,8 +1,8 @@
-extends MarginContainer
+extends NinePatchRect
 
 var InventoryListingItemScene = preload("res://scenes/game/field/inventory_view/InventoryListingItem.tscn")
 
-onready var listing_node = $hbox/panel/margin/scroll/listing
+onready var listing_node = $margin/scroll/listing
 
 func _ready():
 	inventory_service.connect("items_changed", self, "_on_inventory_items_changed")

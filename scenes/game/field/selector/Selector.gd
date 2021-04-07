@@ -1,8 +1,9 @@
-extends Node2D
+extends MarginContainer
 
 onready var tile_indicator = $tile_indicator
-onready var detailed_information = $canvas/margin/hbox/detailed_information
-onready var detailed_information_vbox = $canvas/margin/hbox/detailed_information/scroll/margin/vbox
+
+onready var selector = $selector
+onready var detailed_information_vbox = $selector/scroll/margin/vbox
 
 func _unhandled_input(event):
 	if event.is_action_pressed("select_point"):
@@ -17,13 +18,13 @@ func _unhandled_input(event):
 				var selector_ui = field_service.constructions_map[v].get_selector_ui()
 				selector_ui.visible = true
 				detailed_information_vbox.add_child(selector_ui)
-				detailed_information.visible = true
+				selector.visible = true
 	if event.is_action_pressed("cancel"):
 		_hide_selection()
 
 func _hide_selection():
 	tile_indicator.visible = false
-	detailed_information.visible = false
+	selector.visible = false
 	var detailed_information_vbox_children = detailed_information_vbox.get_children()
 	for child in detailed_information_vbox_children: child.queue_free()
 	
