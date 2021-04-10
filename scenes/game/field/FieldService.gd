@@ -27,7 +27,7 @@ func _generate_map():
 	constructor_instance.global_position = constructor_position
 	constructions_container.add_child(constructor_instance)
 	constructions_map[mid_cell] = constructor_instance
-	constructor_instance.add_item({ 'name': 'iron', 'quantity': 100 })
+	constructor_instance.add_item({ 'name': 'iron', 'quantity': 10 })
 
 func _get_relative_cell(cell_vector, direction):
 	var global_position = tile_map.map_to_world(cell_vector) + tile_map.cell_size/2

@@ -27,6 +27,12 @@ func add_items(items):
 		if remainder: remainders.push_back(remainder)
 	return remainders
 
+func can_afford(items):
+	for item in items:
+		if !data.has(item.name): return false
+		if data[item.name].quantity < item.quantity * -1: return false
+	return true
+
 func get_item(name):
 	return data[name]
 
@@ -36,12 +42,6 @@ func get_item_quantity(name):
 
 func get_metadata(name):
 	return metadata[name]
-
-func has_items(items):
-	for item in items:
-		if !data.has(item.name): return false
-		if data[item.name].quantity < item.quantity: return false
-	return true
 
 func remove_metadata(name):
 	metadata.erase(name)

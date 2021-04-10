@@ -22,12 +22,11 @@ func has_items(items):
 	return inventory.has_items(items)
 
 func produce():
-	print('inventory: ' + str(inventory.data))
 	for name in metadata:
 		var pmd = metadata[name]
 		var imd = inventory.get_metadata(name)
 		if pmd.quantity + get_item_quantity(name) > imd.capacity: continue
-		if inventory.has_items(pmd.costs):
+		if inventory.can_afford(pmd.costs):
 			inventory.add_items(pmd.costs)
 			inventory.add_item({ 'name': name, 'quantity': pmd.quantity })
 
